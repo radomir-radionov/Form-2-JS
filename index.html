@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/JavaScript"
+      src=" https://MomentJS.com/downloads/moment.js"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <form id="form">
+          <input
+            type="text"
+            id="title"
+            class="border-red"
+            placeholder="Title:"
+          /><input
+            type="text"
+            id="description"
+            class="border-red"
+            placeholder="Description:"
+          />
+          <button id="submit" class="btn border-red">Submit</button>
+        </form>
+        <div id="blackboard" class="border-red">
+          <form id="formEdit" class="border-red">
+            <div id="content">
+              <p>Title:</p>
+              <p>Description:</p>
+              <p>Data:</p>
+            </div>
+            <div class="delete-edit">
+              <button id="delete" class="btn border-red">Delete</button>
+              <button id="edit" class="btn border-red">Edit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
