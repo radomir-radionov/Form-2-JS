@@ -42,6 +42,7 @@ input::-webkit-input-placeholder {
   height: 400px;
   margin-top: 25px;
   padding: 10px 10px;
+  position: relative;
 }
 
 #formEdit {

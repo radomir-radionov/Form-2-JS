@@ -1,6 +1,7 @@
 const title = document.getElementById("title");
 const description = document.getElementById("description");
 const arr = [];
+const formEdit = document.getElementById("formEdit");
 
 retrieveFormValue = (event) => {
   event.preventDefault();
@@ -8,10 +9,18 @@ retrieveFormValue = (event) => {
   createObj(title, description, arr);
 
   const now = moment();
-  content.innerHTML = `
+  blackboard.innerHTML = `
+  <form id="formEdit" class="border-red">
+  <div id="content">
   <p>Title: ${title.value}</p>
   <p>Description: ${description.value}</p>
   <p>Data: ${now.format("dddd, MMMM DD YYYY, h:mm:ss")}</p>
+  </div>
+  <div class="delete-edit">
+    <button id="delete" class="btn border-red">Delete</button>
+    <button id="edit" class="btn border-red">Edit</button>
+  </div>
+</form>
   `;
   console.log(arr);
 };
